@@ -1,3 +1,8 @@
+/** TextCalculation
+ *
+ * @author BinHong Lee
+ * @version 1.0 Dec 18, 2016.
+ */
 import java.io.File;
 import java.io.FileReader;
 import java.io.BufferedReader;
@@ -81,7 +86,11 @@ public class TextCalculation
     }
   }
 
-  //Convert each string to numerical equivalent
+  /** Convert each string to numerical equivalent
+	 *
+	 * @param input	     	String input that is to be converted
+	 * @return			      int equivalent of the given String
+	 */
   public static int toNum(String input)
   {
     switch (input)
@@ -120,7 +129,11 @@ public class TextCalculation
     }
   }
 
-  //Convert each String into char equivalent
+  /** Convert each string to char equivalent
+	 *
+	 * @param input		    String input that is to be converted
+	 * @return			      char equivalent of the given String
+	 */
   public static char toSymbol(String input)
   {
     switch(input)
@@ -134,7 +147,11 @@ public class TextCalculation
     }
   }
 
-  //Check if the given String refers to an expression
+  /** Check if the given String refers to an expression
+	 *
+	 * @param toCheck     String input that is to be checked
+	 * @return			      If the String refers to a recognized expression
+	 */
   public static boolean isExpression(String toCheck)
   {
     if (toSymbol(toCheck) == '#')
@@ -145,7 +162,11 @@ public class TextCalculation
     return true;
   }
 
-  //Convert the List of String into a whole number
+  /** Convert the List of String into a whole number
+	 *
+	 * @param existingSet	Given, existing set of String to be interpreted
+	 * @return			      A whole number represented by the given list of string
+	 */
   public static int toWholeNumber(List<String> existingSet)
   {
     List<Integer> numbers = new ArrayList();
@@ -196,6 +217,13 @@ public class TextCalculation
     return temp;
   }
 
+  /** Carry out the calculation
+	 *
+	 * @param total      	Existing total
+   * @param newInt      The next integer in the main list
+   * @param operation   The operation to be carried out onto the existing total and the new integer
+	 * @return			      New total
+	 */
   public static int calculate(int total, int newInt, char operation)
   {
     switch(operation)
