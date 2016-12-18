@@ -11,6 +11,7 @@ Basically, it will take in text instructions for calculation. The calculator wit
 
 ## Instructions
 You will need JDK installed in your computer. There is no fancy UI in this but rather just a command line tool.
+
 1. Open up "input" file (or create a new empty file)
 2. Put in the instructions you want to calculate. For example ```two plus five```
 3. Type ```javac TextCalculation.java``` into command line when in this folder (wherever you put it).
