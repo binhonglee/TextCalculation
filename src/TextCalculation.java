@@ -26,7 +26,7 @@ public class TextCalculation
 
       //Declaring all needed ArrayList
       List<String> tempStringList = new ArrayList();
-      List<Integer> numbers = new ArrayList();
+      List<Double> numbers = new ArrayList();
       List<Character> expressions = new ArrayList();
 
       //Initializing counter
@@ -73,7 +73,7 @@ public class TextCalculation
       }
 
       //Initialize total with the first number
-      int total = numbers.get(0);
+      double total = numbers.get(0);
 
       //Run through the list of numbers and expressions to carry out the calculation
       for (int i = 0; i < numbers.size() - 1; i++)
@@ -167,15 +167,15 @@ public class TextCalculation
 	 * @param existingSet	Given, existing set of String to be interpreted
 	 * @return			      A whole number represented by the given list of string
 	 */
-  public static int toWholeNumber(List<String> existingSet)
+  public static double toWholeNumber(List<String> existingSet)
   {
-    List<Integer> numbers = new ArrayList();
+    List<Double> numbers = new ArrayList();
 
     //Loop through the given list
     for (int i = 0; i < existingSet.size(); i++)
     {
       //Get and convert the next String
-      int newInput = toNum(existingSet.get(i));
+      double newInput = toNum(existingSet.get(i));
 
       //Check if any multiplication is needed for this input
       if (newInput > 90)
@@ -210,7 +210,7 @@ public class TextCalculation
     }
 
     //Put the wanted number into an int
-    int temp = numbers.get(numbers.size() - 1);
+    double temp = numbers.get(numbers.size() - 1);
     //Clear the list
     numbers.clear();
     //Return the desired number
@@ -224,7 +224,7 @@ public class TextCalculation
    * @param operation   The operation to be carried out onto the existing total and the new integer
 	 * @return			      New total
 	 */
-  public static int calculate(int total, int newInt, char operation)
+  public static double calculate(double total, double newInt, char operation)
   {
     switch(operation)
     {
