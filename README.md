@@ -6,6 +6,7 @@ Basically, it will take in text instructions for calculation. The calculator wit
 
 ## Compatibility
 - Should supports all device with OracleJDK installed.
+- Requires Apache Ant installed (or you will need to manually compile the Java files).
 - Exclude any additional word (like "and") in the input file.
 - Only works for integers. Floats are currently unsupported.
 - Supports negative numbers.
@@ -17,8 +18,7 @@ You will need Oracle JDK installed in your computer. There is no fancy UI in thi
 
 1. Open up "input" file (or create a new empty file)
 2. Put in the instructions you want to calculate. For example ```two plus five```
-3. Type ```javac TextCalculation.java``` into command line when in this folder (wherever you put it).
-4. Type ```java TextCalculation input``` (replace input with the file you want to use as an input file).
+3. Type ```ant execute``` into command line when in this folder (wherever you put it).
 5. There you have it! The answer is in the command line!
 
 ## Input file
