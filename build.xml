@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project name="Text Calculator"
+  default="targets" basedir="."
+  xmlns:dn="antlib:org.apache.ant.dotnet"
+  xmlns="antlib:org.apache.tools.ant">
+  <taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+
+  <property name="src" value="src/"/>
+
+  <property name="build" value="classes"/>
+  <property name="lib" value="./lib" />
+  <property environment="env"/>
+  <property name="user" value="${env.USERNAME}"/>
+
+  <path id="compile.classpath">
+     <pathelement location="${build}"/>
+  </path>
+
+  <target name="targets">
+     <echo message="Targets are clean, prepare, build, execute and targets"/>
+  </target>
+
+  <target name="prepare">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}" />
+  </target>
+
+  <target name="clean">
+    <delete dir="${build}" failonerror="false"/>
+  </target>
+
+  <target name="build" depends="prepare">
+    <javac srcdir="${src}"
+           includeantruntime="false"
+           destdir="${build}">
+       <classpath refid="compile.classpath"/>
+    </javac>
+  </target>
+
+  <target name="execute" depends="build"
+          description="Run the Java program">
+        <java classname="TextCalculation" fork="yes">
+          <classpath refid="compile.classpath"/>
+        </java>
+  </target>
+
+  <target name="test" depends="clean,execute,clean">
+  </target>
+
+</project>

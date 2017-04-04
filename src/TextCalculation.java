@@ -14,7 +14,7 @@ public class TextCalculation
 {
   public static void main(String[] args) throws IOException
   {
-    File file = new File(args[0]);
+    File file = new File("input");
     BufferedReader buffer = new BufferedReader(new FileReader(file));
 
     String line = null;

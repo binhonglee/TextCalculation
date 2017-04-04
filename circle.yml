@@ -1,0 +1,11 @@
+machine:
+  java:
+    version:
+      - openjdk7
+      - oraclejdk8
+dependencies:
+  pre:
+    - ./setup.sh
+test:
+  override:
+    - ant test
