@@ -1,4 +1,7 @@
 # TextCalculation
+
+[![CircleCI](https://circleci.com/gh/binhonglee/TextCalculation.svg?style=svg)](https://circleci.com/gh/binhonglee/TextCalculation) [![Build Status](https://travis-ci.org/binhonglee/TextCalculation.svg?branch=master)](https://travis-ci.org/binhonglee/TextCalculation)
+
 Basically, it will take in text instructions for calculation. The calculator with alphabets if you would.
 
 ## Compatibility

@@ -3,7 +3,6 @@
   default="targets" basedir="."
   xmlns:dn="antlib:org.apache.ant.dotnet"
   xmlns="antlib:org.apache.tools.ant">
-  <taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
 
   <property name="src" value="src/"/>
 
