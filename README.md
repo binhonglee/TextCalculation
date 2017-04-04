@@ -5,7 +5,7 @@
 Basically, it will take in text instructions for calculation. The calculator with alphabets if you would.
 
 ## Compatibility
-- Should supports all device with JDK installed.
+- Should supports all device with OracleJDK installed.
 - Exclude any additional word (like "and") in the input file.
 - Only works for integers. Floats are currently unsupported.
 - Supports negative numbers.
@@ -13,7 +13,7 @@ Basically, it will take in text instructions for calculation. The calculator wit
 - THERE IS NO ERROR HANDLING FOR THE PROGRAM. INVALID INPUT WILL LEAD TO PROGRAM TERMINATION. (or inaccurate results)
 
 ## Instructions
-You will need JDK installed in your computer. There is no fancy UI in this but rather just a command line tool.
+You will need Oracle JDK installed in your computer. There is no fancy UI in this but rather just a command line tool.
 
 1. Open up "input" file (or create a new empty file)
 2. Put in the instructions you want to calculate. For example ```two plus five```

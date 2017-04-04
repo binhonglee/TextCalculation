@@ -3,4 +3,3 @@ install: ./setup.sh
 jdk:
   - oraclejdk8
   - oraclejdk7
-  - openjdk6
